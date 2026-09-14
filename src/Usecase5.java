@@ -3,8 +3,8 @@ public class Usecase5 {
         TicketCounter counter = new TicketCounter();
         Thread t1 = new Thread(counter);
         Thread t2 = new Thread(counter);
-        t1.setName("Thread 1");
-        t2.setName("Thread 2");
+        t1.setName("Counter 1");
+        t2.setName("Counter 2");
         t1.start();
         t2.start();
     }
